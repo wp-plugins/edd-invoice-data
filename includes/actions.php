@@ -60,6 +60,14 @@ function bpmj_edd_invoice_data_cc_form() {
                         <option value="company"><?php _e('Company / Organization', 'bpmj-edd-invoice-data'); ?></option>
                     </select>
                 </p>
+
+                <p id="bpmj_edd_invoice_data_person_name_p">
+                    <label for="bpmj_edd_invoice_data_invoice_person_name" class="edd-label"><?php _e('Name', 'bpmj-edd-invoice-data'); ?>
+                        <span class="edd-required-indicator">*</span>
+                    </label>
+                    <span class="edd-description"><?php _e('Enter a name for the invoice', 'bpmj-edd-invoice-data'); ?></span>
+                    <input type="text" value=""  name="bpmj_edd_invoice_data_invoice_person_name" class="edd-input">
+                </p>
             <?php
             }else {
             ?>
@@ -68,15 +76,7 @@ function bpmj_edd_invoice_data_cc_form() {
             }
             ?>
 
-            <p id="bpmj_edd_invoice_data_person_name_p">
-                <label for="bpmj_edd_invoice_data_invoice_person_name" class="edd-label"><?php _e('Name', 'bpmj-edd-invoice-data'); ?>
-                    <span class="edd-required-indicator">*</span>
-                </label>
-                <span class="edd-description"><?php _e('Enter a name for the invoice', 'bpmj-edd-invoice-data'); ?></span>
-                <input type="text" value=""  name="bpmj_edd_invoice_data_invoice_person_name" class="edd-input">
-            </p>
-
-            <p id="bpmj_edd_invoice_data_company_name_p">
+            <p id="bpmj_edd_invoice_data_company_name_p<?php if( ! $person ) echo '_show'; ?>">
                 <label for="bpmj_edd_invoice_data_invoice_company_name" class="edd-label"><?php _e('Company', 'bpmj-edd-invoice-data'); ?>
                     <span class="edd-required-indicator">*</span>
                 </label>
@@ -84,7 +84,7 @@ function bpmj_edd_invoice_data_cc_form() {
                 <input type="text" value=""  name="bpmj_edd_invoice_data_invoice_company_name" class="edd-input">
             </p>
 
-            <p id="bpmj_edd_invoice_data_nip_p">
+            <p id="bpmj_edd_invoice_data_nip_p<?php if( ! $person ) echo '_show'; ?>">
                 <label for="bpmj_edd_invoice_data_invoice_nip" class="edd-label"><?php _e('Tax ID', 'bpmj-edd-invoice-data'); ?>
                     <span class="edd-required-indicator">*</span>
                 </label>
@@ -137,19 +137,21 @@ function bpmj_edd_invoice_data_cc_form() {
 
         // Ukrywanie i pokazywanie danych w zależności od wyboru: osoba fiz. / firma
 
-        jQuery("select[name=bpmj_edd_invoice_data_invoice_type]").on("change", function() {
+        if( jQuery("select[name=bpmj_edd_invoice_data_invoice_type]").length > 0 ) {
+            jQuery("select[name=bpmj_edd_invoice_data_invoice_type]").on("change", function() {
 
-            if (jQuery('select[name=bpmj_edd_invoice_data_invoice_type]').val() == 'person') {
-                jQuery('#bpmj_edd_invoice_data_person_name_p').slideDown();
-                jQuery('#bpmj_edd_invoice_data_company_name_p').slideUp();
-                jQuery('#bpmj_edd_invoice_data_nip_p').slideUp();
-            } else {
-                jQuery('#bpmj_edd_invoice_data_person_name_p').slideUp();
-                jQuery('#bpmj_edd_invoice_data_company_name_p').slideDown();
-                jQuery('#bpmj_edd_invoice_data_nip_p').slideDown();
-            }
+                if (jQuery('select[name=bpmj_edd_invoice_data_invoice_type]').val() == 'person') {
+                    jQuery('#bpmj_edd_invoice_data_person_name_p').slideDown();
+                    jQuery('#bpmj_edd_invoice_data_company_name_p').slideUp();
+                    jQuery('#bpmj_edd_invoice_data_nip_p').slideUp();
+                } else {
+                    jQuery('#bpmj_edd_invoice_data_person_name_p').slideUp();
+                    jQuery('#bpmj_edd_invoice_data_company_name_p').slideDown();
+                    jQuery('#bpmj_edd_invoice_data_nip_p').slideDown();
+                }
 
-        });
+            });
+        }
     </script>
 
     <?php

@@ -4,7 +4,7 @@
   Plugin Name: Easy Digital Downloads - Invoice Data
   Plugin URI: 
   Description: This plugin allows you to gather invoice data for any EDD payment gateway
-  Version: 1.0
+  Version: 1.0.1
   Author: upSell.pl & Better Profits
   Author URI: http://upsell.pl
 
@@ -22,7 +22,7 @@ define('BPMJ_EDD_ID_INC', plugins_url('includes', __FILE__)); // URL do katalogu
 
 // Licencja / Autoaklualizacja
 if ( ! defined( 'BPMJ_EDD_ID_VERSION' ) ) {
-	define( 'BPMJ_EDD_ID_VERSION', '1.0' );
+	define( 'BPMJ_EDD_ID_VERSION', '1.0.1' );
 }
 
 //  Dołącza wymagane pliki

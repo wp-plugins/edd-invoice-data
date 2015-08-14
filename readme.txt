@@ -3,7 +3,7 @@ Contributors: upsell
 Tags: edd, digital downloads, e-commerce, e-downloads, easy digital downloads, invoice, billing, faktura, rachunek, vat, nip, upsell
 Requires at least: 3.5
 Tested up to: 4.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,9 @@ EDD Invoice Data is is add-on plugin for Easy Digital Downloads plugin, which al
 2. Invoice data form
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix: Invoice form was not correct diplayed for all settings
 
 = 1.0 =
 * First release.
