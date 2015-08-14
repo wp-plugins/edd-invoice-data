@@ -1,0 +1,26 @@
+
+
+.bpmj_edd_invoice_data_invoice_check {
+    margin-bottom: 10px;
+}
+
+.bpmj_edd_invoice_data_invoice_check input{
+    float: none!important;
+    display: inline-block !important;
+}
+
+.bpmj_edd_invoice_data_invoice {
+    display: none;
+}
+
+.bpmj_edd_invoice_data_invoice fieldset legend {
+
+}
+
+#bpmj_edd_invoice_data_company_name_p {
+    display: none;
+}
+
+#bpmj_edd_invoice_data_nip_p {
+    display: none;
+}

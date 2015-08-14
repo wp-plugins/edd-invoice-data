@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Digital Downloads - Dane do faktury\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Aug 12 2015 16:03:48 GMT+0200 (Środkowoeuropejski "
+"czas letni)\n"
+"PO-Revision-Date: Wed Aug 12 2015 16:10:30 GMT+0200 (Środkowoeuropejski czas "
+"letni)\n"
+"Last-Translator: admin <michal@upclick.pl>\n"
+"Language-Team: \n"
+"Language: Polish\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: pl_PL\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../includes/actions.php:23
+msgid "Invoice"
+msgstr "Faktura"
+
+#: ../includes/actions.php:24
+msgid "I want to receive an invoice"
+msgstr "Chcę otrzymać fakturę"
+
+#: ../includes/actions.php:25 ../includes/actions.php:250 ..
+#: /includes/admin/settings.php:8
+msgid "Invoice data"
+msgstr "Dane do faktury"
+
+#: ../includes/actions.php:55
+msgid "I order as"
+msgstr "Zamawiam jako"
+
+#: ../includes/actions.php:59 ../includes/actions.php:257
+msgid "Individual"
+msgstr "Osoba fizyczna"
+
+#: ../includes/actions.php:60 ../includes/actions.php:252
+msgid "Company / Organization"
+msgstr "Firma / Organizacja"
+
+#: ../includes/actions.php:68
+msgid "Name"
+msgstr "Imię i nazwisko"
+
+#: ../includes/actions.php:71
+msgid "Enter a name for the invoice"
+msgstr "Wpisz imię i nazwisko do faktury"
+
+#: ../includes/actions.php:76
+msgid "Company"
+msgstr "Nazwa firmy"
+
+#: ../includes/actions.php:79
+msgid "Enter a company name for the invoice"
+msgstr "Wpisz nazwę firmy do faktury"
+
+#: ../includes/actions.php:84
+msgid "Tax ID"
+msgstr "NIP"
+
+#: ../includes/actions.php:91
+msgid "Street"
+msgstr "Ulica"
+
+#: ../includes/actions.php:94
+msgid "Enter the street name and number"
+msgstr "Wpisz nazwę ulicy wraz z numerem"
+
+#: ../includes/actions.php:101
+msgid "Postal Code"
+msgstr "Kod pocztowy"
+
+#: ../includes/actions.php:108
+msgid "City"
+msgstr "Miejscowość"
+
+#: ../includes/actions.php:192
+msgid "Please enter a name for the invoice"
+msgstr "Uzupełnij imię i nazwisko do faktury"
+
+#: ../includes/actions.php:197
+msgid "Please enter a company name"
+msgstr "Uzupełnij nazwę firmy"
+
+#: ../includes/actions.php:202
+msgid "Please enter a Tax ID"
+msgstr "Uzupełnij numer NIP"
+
+#: ../includes/actions.php:209
+msgid "Please enter the name and street number"
+msgstr "Uzupełnij nazwę ulicy wraz z numerem"
+
+#: ../includes/actions.php:214
+msgid "Please enter a postal code"
+msgstr "Uzupełnij kod pocztowy"
+
+#: ../includes/actions.php:219
+msgid "Please enter a city name"
+msgstr "Uzupełnij nazwę miejscowości"
+
+#: ../includes/actions.php:252 ../includes/actions.php:257
+msgid "Type:"
+msgstr "Typ:"
+
+#: ../includes/actions.php:253
+msgid "Company name:"
+msgstr "Nazwa firmy:"
+
+#: ../includes/actions.php:254
+msgid "Tax ID:"
+msgstr "NIP:"
+
+#: ../includes/actions.php:258
+msgid "Name:"
+msgstr "Imię i nazwisko:"
+
+#: ../includes/actions.php:260
+msgid "Street:"
+msgstr "Ulica:"
+
+#: ../includes/actions.php:261
+msgid "Postal Code:"
+msgstr "Kod pocztowy:"
+
+#: ../includes/actions.php:262
+msgid "City:"
+msgstr "Miejscowość"
+
+#: ../includes/admin/settings.php:22
+msgid "Payment gateways"
+msgstr "Bramki płatności"
+
+#: ../includes/admin/settings.php:23
+msgid "Select for which payment gateways enable billing."
+msgstr "Wybierz dla których bramek płatności aktywować dane do faktury."
+
+#: ../includes/admin/settings.php:29
+msgid "Require the invoice"
+msgstr "Wymagaj danych do faktury"
+
+#: ../includes/admin/settings.php:30
+msgid "When you select this option, enter the invoice data will be mandatory"
+msgstr "Po zaznaczeniu tej opcji, podanie danych do faktury będzie obowiązkowe"
+
+#: ../includes/admin/settings.php:35
+msgid "Invoices also for individuals"
+msgstr "Faktury także dla osób fizycznych"
+
+#: ../includes/admin/settings.php:36
+msgid ""
+"When you select this option, billing will also be able to give individuals "
+"(name and address)"
+msgstr ""
+"Po zaznaczeniu tej opcji, dane do faktury będą mogły podać również osoby "
+"fizyczne (imię, nazwisko oraz adres)"
